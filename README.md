@@ -25,7 +25,7 @@ Execute o comando abaixo para restaurar todos os pacotes do node que a aplica√ß√
 $ npm install
 ```
 
-Execute o comando abaixo para compilar todos os arquivos [TypeScript], habilitar o whatch e iniciar o servidor lite
+Execute o comando abaixo para compilar, habilitar o whatch para todos os arquivos [TypeScript] e iniciar o servidor lite
 ```sh
 $ npm start
 ```
