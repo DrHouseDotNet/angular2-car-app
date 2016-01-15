@@ -8,7 +8,7 @@
     "clean": "rm -r app/js/*",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
-    "start": "concurrent \"npm run clean\" \"npm run tsc:w\" \"npm run lite\" "
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
   },
   "author": "Nicolas Takashi",
   "license": "ISC",
