@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<h2>Marca: {{car.brand}}</h2>
+<h2>Modelo: {{car.model}}</h2>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <label>Marca: </label>
+            <input type="text" class="form-control" [(ngModel)]="car.brand" placeholder="Marca do veículo" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <label>Modelo: </label>
+            <input type="text" class="form-control" [(ngModel)]="car.model" placeholder="Modelo do veículo" />
+        </div>
+    </div>
+</div>

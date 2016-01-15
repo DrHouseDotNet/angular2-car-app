@@ -28,7 +28,7 @@ System.register(['angular2/core'], function(exports_1) {
                 CarComponent = __decorate([
                     core_1.Component({
                         selector: 'my-car',
-                        template: " <div class=\"container\">\n                    <h1>{{title}}</h1>\n                    <h2>Marca: {{car.brand}}</h2>\n                    <h2>Modelo: {{car.model}}</h2>\n                    <div class=\"row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"form-group\">\n                                <label>Marca: </label>\n                                <input type=\"text\" class=\"form-control\" [(ngModel)]=\"car.brand\" placeholder=\"Marca do ve\u00EDculo\"/>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"form-group\">\n                                <label>Modelo: </label>\n                                <input type=\"text\" class=\"form-control\" [(ngModel)]=\"car.model\" placeholder=\"Modelo do ve\u00EDculo\"/>\n                            </div>\n                        </div>\n                    </div>\n                </div>"
+                        templateUrl: 'app/view/car-detail.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], CarComponent);
