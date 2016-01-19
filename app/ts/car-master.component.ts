@@ -8,7 +8,7 @@ interface Car {
 
 @Component({
     selector: 'my-car',
-    templateUrl:'app/view/car-detail.html'
+    templateUrl:'app/view/car-master.html'
 })
 
 
