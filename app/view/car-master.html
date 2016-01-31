@@ -8,20 +8,7 @@
         </li>
     </ul>
 </div>
-<div *ngIf="selectedCar">
-    <div class="col-md-6">
-        <div class="form-group">
-            <label>Marca: </label>
-            <input type="text" class="form-control" [(ngModel)]="selectedCar.brand" placeholder="Marca do veículo" />
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="form-group">
-            <label>Modelo: </label>
-            <input type="text" class="form-control" [(ngModel)]="selectedCar.model" placeholder="Modelo do veículo" />
-        </div>
-    </div>
-</div>
+<car-detail [car]="selectedCar"></car-detail>
 <style>
     .selected {
         background: orangered
