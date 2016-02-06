@@ -5,13 +5,13 @@ import {CarService} from './car-service'
 import {OnInit} from 'angular2/core'
 
 @Component({
-    selector: 'my-car',
+    selector: 'car-master',
     templateUrl: 'app/view/car-master.html',
     directives: [CarDetailComponent],
     providers: [CarService]
 })
 
-export class CarComponent implements OnInit {
+export class CarMasterComponent implements OnInit {
     public title: string = "Cadastro de veículos";
     public cars: Car[];
     public selectedCar: Car;

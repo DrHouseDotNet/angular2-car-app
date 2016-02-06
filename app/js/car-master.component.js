@@ -9,7 +9,7 @@ System.register(['angular2/core', './car-detail.component', './car-service'], fu
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, car_detail_component_1, car_service_1;
-    var CarComponent;
+    var CarMasterComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -22,30 +22,30 @@ System.register(['angular2/core', './car-detail.component', './car-service'], fu
                 car_service_1 = car_service_1_1;
             }],
         execute: function() {
-            CarComponent = (function () {
-                function CarComponent(_carService) {
+            CarMasterComponent = (function () {
+                function CarMasterComponent(_carService) {
                     this._carService = _carService;
                     this.title = "Cadastro de veículos";
                 }
-                CarComponent.prototype.ngOnInit = function () {
+                CarMasterComponent.prototype.ngOnInit = function () {
                     var _this = this;
                     this._carService.getCars().then(function (cars) { return _this.cars = cars; });
                 };
-                CarComponent.prototype.onSelect = function (car) {
+                CarMasterComponent.prototype.onSelect = function (car) {
                     this.selectedCar = car;
                 };
-                CarComponent = __decorate([
+                CarMasterComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-car',
+                        selector: 'car-master',
                         templateUrl: 'app/view/car-master.html',
                         directives: [car_detail_component_1.CarDetailComponent],
                         providers: [car_service_1.CarService]
                     }), 
                     __metadata('design:paramtypes', [car_service_1.CarService])
-                ], CarComponent);
-                return CarComponent;
+                ], CarMasterComponent);
+                return CarMasterComponent;
             })();
-            exports_1("CarComponent", CarComponent);
+            exports_1("CarMasterComponent", CarMasterComponent);
         }
     }
 });
