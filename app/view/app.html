@@ -6,20 +6,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Car-App AngularJS 2.0</a>
+            <a class="navbar-brand" [routerLink]="['Cars']">Car-App AngularJS 2.0</a>
         </div>
-        <!--<div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="#">Carros</a>
-                </li>
-            </ul>
-        </div>-->
     </div>
 </div>
 <div class="container theme-showcase">
     <div style="margin:80px;">
-        <car-master></car-master>
+        <router-outlet></router-outlet>
     </div>
     <footer>
         <div class="row">

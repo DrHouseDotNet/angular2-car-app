@@ -1,29 +1,26 @@
-import {Component} from 'angular2/core'
+import {Component, OnInit} from 'angular2/core'
 import {Car} from './car'
 import {CarDetailComponent} from './car-detail.component'
+import {Router} from 'angular2/router'
 import {CarService} from './car-service'
-import {OnInit} from 'angular2/core'
 
 @Component({
-    selector: 'car-master',
     templateUrl: 'app/view/car-master.html',
     directives: [CarDetailComponent],
-    providers: [CarService]
 })
 
 export class CarMasterComponent implements OnInit {
     public title: string = "Cadastro de veículos";
     public cars: Car[];
-    public selectedCar: Car;
 
-    constructor(private _carService: CarService) { }
+    constructor(private _carService: CarService, private _router: Router) { }
 
     ngOnInit() {
         this._carService.getCars().then(cars => this.cars = cars);
     }
 
     public onSelect(car: Car): void {
-        this.selectedCar = car;
+        this._router.navigate(["CarDetail", { id: car.id }]);
     }
 }
 
