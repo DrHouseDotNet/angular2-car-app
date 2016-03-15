@@ -15,6 +15,7 @@ Essa aplicação utiliza diversos projetos opersource
 * [node.js]
 * [Visual Studio Code]
 * [TypeScript]
+* [ASP.NET Core]
 
 ### Instalação
 
@@ -34,6 +35,15 @@ Execute o comando abaixo para excluir os arquivos .js gerados pela compilação 
 ```sh
 $ npm clean
 ```
+Para executar a API REST construida com ASP.NET Core navegue até a pasta e execute os seguintes comandos.
+
+```sh
+//restaura os pacotes que a API depende.
+$ dnu restore 
+
+// Inicia um processo do Kestrel no endereço http://localhost:5000
+$ dnx web 
+```
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
@@ -43,5 +53,6 @@ $ npm clean
    [Bootstrap]: <http://getbootstrap.com/>
    [AngularJS]: <https://angular.io/>
    [TypeScript]: <http://www.typescriptlang.org/>
+   [ASP.NET Core]:<http://docs.asp.net/en/latest/conceptual-overview/dotnetcore.html>
 
 
